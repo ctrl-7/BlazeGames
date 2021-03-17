@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <script src="jquery-3.5.1.min.js"></script>
+<script> 
+
+</script>
+
+    <title>Contact Us</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color:#999;
+        }
+        .topnav a{
+            float: left;
+            text-align: center;
+            padding:14px 16px;
+            text-decoration:indigo;
+            font-size:17px;
+        }
+        .topnav a:hover{
+            background-color:black;
+        }
+        body{
+                background-image: url("images/contactoffice.jpg");
+                background-position: center top;
+                background-repeat: no-repeat;
+                background-size:cover;
+            }
+        .button{
+            background-color: silver;
+            border: 1px solid black;
+            padding: 6px 10px;
+        }
+        .topnav a.active{
+            background-color: black;
+            color: indigo;
+        }
+        .page{
+        border: 1px solid black;
+        background-color: whitesmoke;
+        margin-top: 2%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+    .txtbx{
+        width: 270px;
+        padding: 12px;
+        border-radius: 15px;
+    }
+    </style>
+<div class="topnav">
+    <a href="GamersPointMain.html">Home </a>
+    <a href="exploregames.html"> Explore Games </a>
+    <a href="exploregaminglaptops.html">Explore Gaming Laptops</a>
+    <a class="active" href="contactus.html"> Contact Us</a>
+    <a href="signin.html"> Sign In </a>
+    <a href="signup.html"> Sign Up </a>
+    <a href="privacypolicy.html"> Privacy Policy </a>
+    <a href="aboutus.html"> About Us </a>
+    <a href="news.html"> News </a>
+</div>
+<center>
+<body>
+    <form action="/action_page.php" class="page" >
+    <head>
+        <h1 style="color:darkred; font-family: cursive;"> Send us a Message :-)</h1>
+    </head>
+    <p style="color: darkred; font-family: cursive;"> Our team work 24/7 to provide the best experience to our customers.</p>
+        
+            <label for="name">Your Name:</label><br> 
+            <input type='txt' id="name" class="txtbx"> <br> <br>
+            <label for="reason">Subject:</label>
+            <br> <select required id="reason" style="border-radius: 20px; padding: 15px; width: 300px; border: 2px solid black;">
+                <option> Select </option>
+                <option> I Want to give a feedback </option>
+                <option> There is a bug in this website </option>
+                <option> Just want to waste your time </option>
+                <option> Other</option></select> <br> <br>
+                <!--You have been using this website for: <br>
+            <input type="radio" id="1month-" name="1month-" value="1month-">
+            <label for="1month-"> Less than 1 month</label> <br>
+            <input type="radio" id="1month+" name="1month+" value="1month+">
+            <label for=">1month+"> More than 1 month </label> <br>
+            <input type="radio" id="2months+" name="2months+" value="2months+">
+            <label for="2months+"> More than 2 months</label> <br>
+            <br> -->
+            <label for="email"> E-mail Address:</label><br>
+            <input type="email" id="email" name="email" class="txtbx"> <br><br>
+            Your Message: <br> <textarea class="txtbx" rows="5" placeholder="What do you want to tell us ?"></textarea> <br> <br>
+            <button onclick="msal()" type="submit" value="Submit" class="button" style="padding: 10px; border: 1px solid black; width: 150px; border-radius: 5px;">Send</button>
+            <button class="button" type="reset" style="padding: 10px; border: 1px solid black; width: 150px; border-radius: 5px;"> Reset</button>
+
+            <script>
+                function msal() {
+                  alert("Hello! Your Message will be Sent.");
+                }
+            </script>
+        
+        <p style="color: darkred; font-family: cursive; border: 2px black; "> Click submit to send your message</p>   
+</form>
+    </center>        
+</body>
+</html>

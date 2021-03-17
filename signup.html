@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <title> Sign Up</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(images/subckn.jpeg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color:#999;
+        }
+        .topnav a{
+            float: left;
+            text-align: center;
+            padding:14px 16px;
+            text-decoration:indigo;
+            font-size:17px;
+        }
+        .topnav a:hover{
+            background-color:black;
+        }
+        .topnav a.active{
+            background-color: black;
+            color: indigo;
+        }
+        .page{
+        border: 2px solid black;
+        background-color: rgb(73, 73, 73);
+        margin-left: 30%;
+        margin-right: 30%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        font-family: cursive;
+    }
+    .txtbx{
+        width: 270px;
+        padding: 12px;
+        border-radius: 20px;
+    }
+    </style>
+<div class="topnav">
+    <a href="GamersPointMain.html">Home </a>
+    <a href="exploregames.html"> Explore Games </a>
+    <a href="exploregaminglaptops.html">Explore Gaming Laptops</a>
+    <a href="contactus.html"> Contact Us</a>
+    <a href="signin.html"> Sign In </a>
+    <a class="active" href="signup.html"> Sign Up </a>
+    <a href="privacypolicy.html"> Privacy Policy </a>
+    <a href="aboutus.html"> About Us </a>
+    <a href="news.html"> News </a>
+</div>
+
+    <h1 style="color:black; font-size:40px; text-align: center; font-family: 'Courier New', Courier, monospace"> Create a new account </h1>
+    <body>
+        <form action="/action_page.php" class="page" >
+        <label style="margin-left: 140px;" for="name" >Name: </label>
+        <input id="name" type='txt' class="txtbx"> <br> <br>
+
+        <label style="margin-left: 135px;" for="email">E-mail: </label>
+        <input id="email" type='txt' required class="txtbx"> <br> <br>
+
+        <label style="margin-left: 110px;" for="mobileno"> Mobile no: </label> 
+        <input id="mobileno" type='text' required class="txtbx"> <br> <br>
+
+         <label style="margin-left: 27px;" for="password"> Enter your Password: </label>
+        <input type="password" name="password" id= "password" maxlength="8" class="txtbx" placeholder="Maximum 8 characters..."><br><br>
+
+         <label style="margin-left: 2px;" for="password2"> Re-Enter your password: </label> 
+         <input type="password" name="password2" id="password2" maxlength="8" class="txtbx" placeholder="The Same Password..."><br>
+         <center>
+        <br> <button type="submit" style="padding: 10px; border: 1px solid black; width: 150px; border-radius: 5px;" onclick="abx()">Continue</button><br>
+        
+        <script>
+            function abx() {
+              alert("Congratulations! New Account Created");
+            }
+        </script>
+
+</form>        
+</body>
+</html>
+ 

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <title>Sign In</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(images/sibck.jpg);
+            background-size: cover;
+            background-position: right;
+        }
+        .topnav{
+            overflow: hidden;
+            background-color:#999;
+        }
+        .topnav a{
+            float: left;
+            text-align: center;
+            padding:14px 16px;
+            text-decoration:indigo;
+            font-size:17px;
+        }
+        .topnav a:hover{
+            background-color:black;
+        }
+        .topnav a.active{
+            background-color: black;
+            color: indigo;
+        }
+        .page{
+        background-color: rgb(88, 88, 88);
+        margin-top: 10%;
+        margin-left: 10%;
+        margin-right: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .txtbx{
+        width: 270px;
+        padding: 12px;
+        border-radius: 20px;
+        margin-left: 5px;
+    }
+    </style>
+<div class="topnav">
+    <a href="GamersPointMain.html">Home </a>
+    <a href="exploregames.html"> Explore Games </a>
+    <a href="exploregaminglaptops.html">Explore Gaming Laptops</a>
+    <a href="contactus.html"> Contact Us</a>
+    <a class="active" href="signin.html"> Sign In </a>
+    <a href="signup.html"> Sign Up </a>
+    <a href="privacypolicy.html"> Privacy Policy </a>
+    <a href="aboutus.html"> About Us </a>
+    <a href="news.html"> News </a>  
+</div>
+    <body>
+        <form action="/gpmessages.txt" class="page"  style="font-family: cursive;"><br>
+        <label for="email" style="margin-left: 140px;">E-Mail:</label>
+        <input id="email" type="email" class="txtbx"> <br> <br>
+         <label for="password" style="margin-left: 33px;"> Enter your Password: </label> 
+        <input type="password" name="password" id="password" maxlength="8" class="txtbx">
+        <br><center>
+        <br> <input type="submit" value="Continue" style="padding: 10px; border: 1px solid black; width: 150px; border-radius: 5px; margin-left: 130px;"s><br>
+        <p>Don't have an account yet?<br> Create one now.</p>
+        <a href="signup.html" > Create Account</a>
+        </form>
+    </body>
+</html>
+ 
